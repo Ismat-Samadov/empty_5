@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* ─── Neon Pinball global styles ────────────────────────────────────────────── */
+
+:root {
+  --bg: #040010;
+  --neon-pink: #ff00ff;
+  --neon-cyan: #00ffff;
+  --neon-purple: #7700ff;
+  --neon-green: #00ff88;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: #ccccee;
+  font-family: 'Courier New', Courier, monospace;
+  /* Prevent overscroll bounce on mobile */
+  overscroll-behavior: none;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+/* Prevent text selection globally (the game is pointer-heavy) */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Scrollbar theming */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0020;
+}
+::-webkit-scrollbar-thumb {
+  background: #7700ff;
+  border-radius: 2px;
+}
+
+/* Canvas cursor */
+canvas {
+  cursor: crosshair;
+}
+
+/* Button focus outline in neon style */
+button:focus-visible {
+  outline: 2px solid var(--neon-purple);
+  outline-offset: 2px;
+}
+
+/* Prevent default button styling that fights Tailwind */
+button {
+  cursor: pointer;
+}

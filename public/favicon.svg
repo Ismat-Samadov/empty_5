@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <!-- Background -->
+  <rect width="32" height="32" rx="6" fill="#040010"/>
+
+  <!-- Table border -->
+  <rect x="3" y="3" width="26" height="26" rx="3" fill="none" stroke="#7700ff" stroke-width="1.5"/>
+
+  <!-- Bumpers (neon circles) -->
+  <circle cx="16" cy="10" r="3.5" fill="#ff00ff" opacity="0.9"/>
+  <circle cx="16" cy="10" r="3.5" fill="none" stroke="#ff88ff" stroke-width="0.8"/>
+
+  <circle cx="10" cy="15" r="2.5" fill="#ff6600" opacity="0.9"/>
+  <circle cx="22" cy="15" r="2.5" fill="#00ffcc" opacity="0.9"/>
+
+  <!-- Ball -->
+  <circle cx="16" cy="22" r="3" fill="url(#ballGrad)"/>
+  <defs>
+    <radialGradient id="ballGrad" cx="35%" cy="35%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#aaaaff"/>
+      <stop offset="100%" stop-color="#2222aa"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Left flipper -->
+  <line x1="5" y1="27" x2="13" y2="25" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right flipper -->
+  <line x1="27" y1="27" x2="19" y2="25" stroke="#00e5ff" stroke-width="2" stroke-linecap="round"/>
+</svg>
